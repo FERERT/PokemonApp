@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">PokemonApp</string>
+    <string name="pokemon">Pokemon:</string>
+    <string name="nombre">Nombre</string>
+    <string name="attack_power">Attack Power</string>
+    <string name="nuevo_nombre">Nuevo Nombre</string>
+    <string name="evolucionar">EVOLUCIONAR</string>
+    <string name="saludar">SALUDAR</string>
+    <string name="sanar">SANAR</string>
+</resources>

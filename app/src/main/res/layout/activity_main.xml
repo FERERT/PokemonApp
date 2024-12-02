@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp"
+        android:gravity="start">
+
+        <EditText
+            android:id="@+id/etName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Name"
+            android:layout_marginBottom="8dp" />
+
+        <EditText
+            android:id="@+id/etAttackPower"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Attack Power"
+            android:layout_marginBottom="30dp" />
+
+        <Button
+            android:id="@+id/btCreatePokemon"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="createNewPokemon"
+            android:text="Create Pokemon"
+            android:layout_marginBottom="16dp" />
+
+        <ImageView
+            android:id="@+id/ivPokemon"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_marginBottom="8dp"
+            android:layout_marginLeft="100dp"
+            android:src="@mipmap/nopokemon" />
+
+        <TextView
+            android:id="@+id/tvPokemon"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Pokemon Details"
+            android:gravity="center" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_weight="1"
+                android:layout_marginLeft="10dp">
+
+                <EditText
+                    android:id="@+id/etFirePokemon"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Name"
+                    android:layout_marginBottom="8dp" />
+
+                <EditText
+                    android:id="@+id/etFireAttack"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Attack Power"
+                    android:layout_marginBottom="30dp" />
+
+                <EditText
+                    android:id="@+id/etFireHeatResistance"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Fire Resistance"
+                    android:layout_marginTop="-30dp"/>
+
+                <Button
+                    android:id="@+id/btCreateFirePokemon"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="#BC0341"
+                    android:onClick="createFirePokemon"
+                    android:text="Create Fire Pokemon"
+                    android:layout_marginBottom="16dp" />
+
+                <ImageView
+                    android:id="@+id/ivFirePokemon"
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:layout_marginBottom="8dp"
+                    android:src="@mipmap/nopokemon" />
+
+                <TextView
+                    android:id="@+id/tvFirePokemon"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Fire Pokemon Details"
+                    android:gravity="center" />
+
+                <Button
+                    android:id="@+id/btEvolveFirePokemon"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="#FDEA39"
+                    android:textColor="@color/black"
+                    android:onClick="evolveFirePokemon"
+                    android:text="Evolve"
+                    android:textAllCaps="true"
+                    />
+
+                <Button
+                    android:id="@+id/btCureFirePokemon"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="#41BC03"
+                    android:onClick="cureFirePokemon"
+                    android:text="Cure"
+                    android:textAllCaps="true"
+                    />
+
+                <EditText
+                    android:id="@+id/etEvolveFirePokemon"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Evolution Name"
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_weight="1"
+                android:layout_marginLeft="10dp">
+
+                <EditText
+                    android:id="@+id/etWaterPokemon"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Name"
+                    android:layout_marginBottom="8dp" />
+
+                <EditText
+                    android:id="@+id/etWaterAttack"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Attack Power"
+                    android:layout_marginBottom="30dp" />
+
+                <EditText
+                    android:id="@+id/etWaterSplashResistance"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Water Resistance"
+                    android:layout_marginTop="-30dp"/>
+
+                <Button
+                    android:id="@+id/btCreateWaterPokemon"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="16dp"
+                    android:backgroundTint="#0788C5"
+                    android:onClick="createWaterPokemon"
+                    android:text="Create Water Pokemon" />
+
+                <ImageView
+                    android:id="@+id/ivWaterPokemon"
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:layout_marginBottom="8dp"
+                    android:src="@mipmap/nopokemon" />
+
+                <TextView
+                    android:id="@+id/tvWaterPokemon"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Water Pokemon Details"
+                    android:gravity="center" />
+
+                <Button
+                    android:id="@+id/btEvolveWaterPokemon"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="#FDEA39"
+                    android:textColor="@color/black"
+                    android:onClick="evolveWaterPokemon"
+                    android:text="Evolve"
+                    android:textAllCaps="true"
+                    />
+
+                <Button
+                    android:id="@+id/btCureWaterPokemon"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="#41BC03"
+                    android:onClick="cureWaterPokemon"
+                    android:text="Cure"
+                    android:textAllCaps="true"
+                    />
+
+                <EditText
+                    android:id="@+id/etEvolveWaterPokemon"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Evolution Name"
+                    />
+            </LinearLayout>
+        </LinearLayout>
+        <Button
+            android:id="@+id/btFight"
+            android:layout_width="180dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="100dp"
+            android:text="Fight"
+            android:textAllCaps="true"
+            />
+        <EditText
+            android:id="@+id/battleLogs"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textMultiLine"
+            android:layout_margin="10dp"/>
+    </LinearLayout>
+</ScrollView>
+
